@@ -1,3 +1,19 @@
+# Traffic Incident Duration (TID) Prediction: An Introduction
+
+Traffic Incident Duration (TID) refers to the time elapsed between when a traffic incident occurs and when it is resolved. This encompasses the entirety of the incident management process, from the moment of the incident's occurrence to the final resolution, including detection, response, recovery, and site clearance times.
+
+Predicting Traffic Incident Duration accurately is of paramount importance for several reasons:
+
+1. **Enhanced Traffic Management**: Accurate predictions of incident durations allow traffic management centers to make informed decisions about deploying resources and managing traffic disruptions.
+
+2. **Improved Incident Response**: Predicting the duration of traffic incidents enables emergency services and first responders to better plan their operations, potentially reducing the incident's overall duration.
+
+3. **Informed Travelers**: Travelers can be provided with better information regarding expected delays and alternative routes, thus mitigating the impact of incidents on their travel plans.
+
+However, TID prediction is inherently challenging due to the uncertain nature of traffic incidents. Factors influencing TID include incident characteristics (type, severity, location), environmental conditions (time of day, weather), and response attributes (response time, recovery strategy).
+
+In this context, machine learning and probabilistic graphical models such as Bayesian Networks can play a significant role in effectively modeling and predicting TID by handling uncertainty and capturing complex relationships among influencing factors.
+
 # Traffic Incident Duration Prediction using Bayesian Networks
 
 This README outlines how to use Bayesian Networks (BN) for predicting Traffic Incident Duration (TID). 
@@ -22,6 +38,8 @@ Bayesian Networks (BN) are suitable for this task for several reasons:
 2. **Incorporation of Domain Knowledge**: BN's allow the integration of expert knowledge into the model in a transparent and interpretable way.
 
 3. **Cause-Effect Relationships**: BN's can capture causal relationships between variables, which is critical in understanding and predicting traffic incidents.
+
+In the notebook, you will see 
 
 ## Data Description
 
