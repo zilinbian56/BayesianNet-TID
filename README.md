@@ -111,7 +111,7 @@ The learned structure is shown as below:
 
 The array of size `[196, 150, 89, 36]` represents the support for each class, that is, the number of instances in each class in the validation set.
 
-**Note**: The classes in the table above refer to different categories of TID defined in the 'Data Description' section. 
+**Note**: The classes in the table above refer to different categories of TID defined in the ## Data Description section. 
 
 For a practical guide on how to implement these steps, refer to the associated Jupyter notebook and codebase in this repository.
 
