@@ -2,6 +2,13 @@
 
 Traffic Incident Duration (TID) refers to the time elapsed between when a traffic incident occurs and when it is resolved. This encompasses the entirety of the incident management process, from the moment of the incident's occurrence to the final resolution, including detection, response, recovery, and site clearance times.
 
+The process of TID is shown as follows:
+ 
+ <p>
+      <img width="100%" src="https://github.com/ruixuan-ray-zhang/WIM-GNN/blob/main/flow.png?raw=true"></a>
+ </p>
+
+
 Predicting Traffic Incident Duration accurately is of paramount importance for several reasons:
 
 1. **Enhanced Traffic Management**: Accurate predictions of incident durations allow traffic management centers to make informed decisions about deploying resources and managing traffic disruptions.
