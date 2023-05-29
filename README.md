@@ -30,6 +30,7 @@ This README outlines how to use Bayesian Networks (BN) for predicting Traffic In
 2. [Motivation for using Bayesian Networks in TID Prediction](#motivation-for-using-bayesian-networks-in-tid-prediction)
 3. [Data Description](#data-description)
 4. [Process of using Bayesian Networks for TID Prediction](#process-of-using-bayesian-networks-for-tid-prediction)
+5. [Some quick results of using Bayesian Networks for TID Prediction](#some-quick-results-of-using-bayesian-networks-for-tid-prediction)
 
 ## Introduction to Bayesian Networks
 Bayesian Networks (BN), also known as belief networks, are graphical models used to represent knowledge about an uncertain domain. It's an acyclic directed graph consisting of nodes representing variables, and edges representing dependencies between variables. Each node has a probability function that takes as input a particular set of values for the node's parent variables, and gives (as output) the probability of the variable represented by the node.
@@ -111,7 +112,7 @@ The learned structure is shown as below:
 
 The array of size `[196, 150, 89, 36]` represents the support for each class, that is, the number of instances in each class in the validation set.
 
-**Note**: The classes in the table above refer to different categories of TID defined in the ## Data Description section. 
+**Note**: The classes in the table above refer to different categories of TID defined in the 'Data Description' section. 
 
 For a practical guide on how to implement these steps, refer to the associated Jupyter notebook and codebase in this repository.
 
