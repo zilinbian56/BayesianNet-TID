@@ -1,6 +1,6 @@
 # Traffic Incident Duration (TID) Prediction: An Introduction
 
-Traffic Incident Duration (TID) refers to the time elapsed between when a traffic incident occurs and when it is resolved. This encompasses the entirety of the incident management process, from the moment of the incident's occurrence to the final resolution, including detection, response, recovery, and site clearance times.
+Traffic Incident Duration (TID) refers to the time elapsed between when a traffic incident occurs and when it is resolved. This encompasses the entirety of the incident management process, from the moment of the incident's occurrence to the final resolution, including detection, response, clearance and site recovery times.
 
 The process of TID is shown as follows:
  
@@ -36,8 +36,6 @@ Bayesian Networks (BN), also known as belief networks, are graphical models used
 
 ## Motivation for using Bayesian Networks in TID Prediction
 
-Traffic Incident Duration (TID) prediction is a critical aspect of Intelligent Transportation Systems. Accurate TID prediction can help in effective traffic management and reduce the negative impact of incidents on traffic flow.
-
 Bayesian Networks (BN) are suitable for this task for several reasons:
 
 1. **Ability to Handle Uncertainty**: Traffic incidents are inherently uncertain and dependent on a wide range of factors. BN's can manage this uncertainty effectively.
@@ -50,21 +48,32 @@ In the notebook, you will see
 
 ## Data Description
 
-The dataset used in this project includes traffic incident records with various attributes. The main target variable is 'Incident Duration'. The independent variables that influence the duration include:
+The dataset used in this project includes traffic incident records within New York City with various attributes. The main target variable is 'Duration (min)'. The independent variables that influence the duration include:
 
-1. `Incident Type`: Type of incident, such as an accident, roadwork, or breakdown.
+1. `Direction`: Direction of the incident, 0: both directions, 1: east, 2: west, 3: south, 4: north, 5: no information.
 
-2. `Time of Day`: The time when the incident occurred, divided into various time intervals.
+2. `County`: The county where the incident occurred, 0: Manhattan, 1: Kings, 2: Queens, 3: Bronx, 4: Richmond.
 
-3. `Weather Condition`: The weather condition during the incident.
+3. `Year`: The year of the incident.
 
-4. `Road Type`: Type of road where the incident occurred, such as highway, arterial road, etc.
+4. `TOD`: Time of day (peak hour or off-peak) when the incident occurred, 0: off-peak, 1: peak hour.
 
-5. `Day of the Week`: The day of the week when the incident occurred.
+5. `PeakHour`: The day of the week when the incident occurred.
+
+6. `DayofWeek`: The day when the incident occurred, 0: weekday, 1: weekend.
+
+7. `MonthofYear`: The season of month when the incident occurred, 0: psring and fall, 1: summer, 2: winter.
+
+8. `Injury involved`: Whether there is injury involved in the incident, 0: no history, 1: injuries involved.
+
+9. `Truck involved`: Whether there is truck involved in the incident, 0: no history, 1: heavy vehicle involved.
+
+10. `Lane Closure Type`: How many travel lanes closed due to the incident, 0: zerao travel lane, 1: one travel lane, 2: more than two travel lanes, 3: all travel lanes.
+
+12. `Fire involved`: Whether there is fire involved in the incident, 0: no history, 1: fire involved.
 
 Each record in the dataset represents a unique traffic incident.
 
-**NOTE**: Ensure your data is clean and properly formatted before using it with Bayesian Networks. Missing or inconsistent data can lead to inaccurate predictions.
 
 ## Process of using Bayesian Networks for TID Prediction
 
