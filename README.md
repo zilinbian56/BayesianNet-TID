@@ -48,7 +48,8 @@ In the notebook, you will see
 
 ## Data Description
 
-The dataset used in this project includes traffic incident records within New York City with various attributes. The main target variable is 'Duration (min)'. The independent variables that influence the duration include:
+The dataset used in this project includes traffic incident records within New York City with various attributes. The main target variable is 'Duration (min)'. The target variable is converted into a categorical variable named 'Duration_class', class 0: 0-30min, class 1: 30-60min, class 2: 60-90min, class 3: larger than 90min. 
+The independent variables that influence the duration include:
 
 1. `Direction`: Direction of the incident, 0: both directions, 1: east, 2: west, 3: south, 4: north, 5: no information.
 
@@ -83,11 +84,22 @@ Here are the steps to use Bayesian Networks for predicting Traffic Incident Dura
 
 2. **Network Structure Learning**: Next, learn the structure of the Bayesian Network. This involves defining the nodes (variables) and edges (dependencies) of the network. 
 
-3. **Parameter Learning**: Once the structure is defined, learn the conditional probability tables (CPTs) for each node in the network. 
+3. **Parameter Learning**: Once the structure is defined, learn the conditional probability Distributions (CPDs) for each node in the network. 
 
 4. **Model Validation**: Validate the model by comparing the predictions with the actual values for a subset of data. Use appropriate metrics for evaluation.
 
 5. **Prediction**: Finally, use the learned Bayesian Network to make predictions about Traffic Incident Duration. 
+
+## Some quick results of using Bayesian Networks for TID Prediction
+
+Here are some quick results of using BNs for predicting TID:
+1. **Learned Network Structure**: the structure learning method used in this study is Chow-Liu ('cl'), the score type used in this study includes ['k2', 'bds', 'bic', 'bdeu'] for model comparison, and obtained the structure with the highest score.
+The learned structure is shown as below:
+ <p>
+      <img width="70%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/6ab8a186b9e5bd3164fdee83e079ed24e95db198/Figure/Timeline%20of%20TID.png"></a>
+ </p>
+
+2. **Learned Parameter**: the estimator used for parameter learning is BayesianEstimator, the prior type used is 'bdeu'.
 
 For a practical guide on how to implement these steps, refer to the associated Jupyter notebook and codebase in this repository.
 
