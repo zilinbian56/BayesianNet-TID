@@ -96,7 +96,7 @@ Here are some quick results of using BNs for predicting TID:
 1. **Learned Network Structure**: the structure learning method used in this study is Chow-Liu ('cl'), the score type used in this study includes ['k2', 'bds', 'bic', 'bdeu'] for model comparison, and obtained the structure with the highest score.
 The learned structure is shown as below:
  <p>
-      <img width="99%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/d46e483c508cc7a84400f0b762b9b971859682bf/Figure/BN_structure.png"></a>
+      <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/d46e483c508cc7a84400f0b762b9b971859682bf/Figure/BN_structure.png"></a>
  </p>
 
 2. **Learned Parameter**: the estimator used for parameter learning is BayesianEstimator, the prior type used is 'bdeu'.
