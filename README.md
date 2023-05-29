@@ -4,8 +4,8 @@ Traffic Incident Duration (TID) refers to the time elapsed between when a traffi
 
 The process of TID is shown as follows:
  
- <p>
-      <img width="70%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/6ab8a186b9e5bd3164fdee83e079ed24e95db198/Figure/Timeline%20of%20TID.png"></a>
+ <p align="center">
+      <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/6ab8a186b9e5bd3164fdee83e079ed24e95db198/Figure/Timeline%20of%20TID.png"></a>
  </p>
 
 
@@ -23,7 +23,15 @@ In this context, machine learning and probabilistic graphical models such as Bay
 
 # Traffic Incident Duration Prediction using Bayesian Networks
 
-This README outlines how to use Bayesian Networks (BN) for predicting Traffic Incident Duration (TID). 
+This README outlines how to use Bayesian Networks (BN) for predicting Traffic Incident Duration (TID).
+
+## References
+
+The BN model and the TID prediction approach were inspired by and built upon the ideas presented in the following work:
+
+1. Ozbay, K., & Noyan, N. (2006). [Estimation of incident clearance times using Bayesian Networks approach](https://www.sciencedirect.com/science/article/pii/S0001457505002009?casa_token=8Jj4Vss1w-MAAAAA:9BSQ7A1TuJYxhdad2cStk5U0eNZFPRjDMxTfzIdP1rNcB2ZmImMZG3lUhFz8_VX-CvqE7evg). *Accident Analysis & Prevention*, 38(3), 542-555. Elsevier. 
+2. Demiroluk, S., & Ozbay, K. (2014). [Adaptive learning in Bayesian Networks for incident duration prediction](https://journals.sagepub.com/doi/pdf/10.3141/2460-09?casa_token=LtCbpoJrIRkAAAAA:Kqhh-oLqBAd7wdgnwx6yoIkHl97K27fVLgkBequJh0JjXNcoVJFYW_YAjvHaUHXhlLx59cBumrJcqQ). *Transportation Research Record*, 2460(1), 77-85. SAGE Publications Sage CA: Los Angeles, CA. 
+
 
 ## Table of Contents
 1. [Introduction to Bayesian Networks](#introduction-to-bayesian-networks)
@@ -96,7 +104,8 @@ Here are the steps to use Bayesian Networks for predicting Traffic Incident Dura
 Here are some quick results of using BNs for predicting TID:
 1. **Learned Network Structure**: the structure learning method used in this study is Chow-Liu ('cl'), the score type used in this study includes ['k2', 'bds', 'bic', 'bdeu'] for model comparison, and obtained the structure with the highest score.
 The learned structure is shown as below:
- <p>
+
+ <p align="center">
       <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/d46e483c508cc7a84400f0b762b9b971859682bf/Figure/BN_structure.png"></a>
  </p>
 
@@ -116,10 +125,10 @@ The array of size `[196, 150, 89, 36]` represents the support for each class, th
 
 4. **Prediction**: the prediction performance of BNs will be evaluated using AUC-ROC curves for each 'Duration_class':
 <p float="left">
-  <img src="/Figure/AUC_ROC_Class0.png" width="100" />
-  <img src="/Figure/AUC_ROC_Class1.png" width="100" /> 
-  <img src="/Figure/AUC_ROC_Class2.png" width="100" />
-  <img src="/Figure/AUC_ROC_Class3.png" width="100" />
+  <img src="/Figure/AUC_ROC_Class0.png" width="220" />
+  <img src="/Figure/AUC_ROC_Class1.png" width="220" /> 
+  <img src="/Figure/AUC_ROC_Class2.png" width="220" />
+  <img src="/Figure/AUC_ROC_Class3.png" width="220" />
 </p>
 
 
