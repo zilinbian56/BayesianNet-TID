@@ -114,12 +114,12 @@ The learned structure is shown as below:
 
 |   | Precision | Recall | F1-Score |
 |---|-----------|--------|----------|
-| Class 0 | 0.98404255 | 0.94387755 | 0.96354167 |
-| Class 1 | 0.92546584 | 0.99333333 | 0.95819936 |
-| Class 2 | 1.00000000 | 0.60674157 | 0.75524476 |
-| Class 3 | 0.52941176 | 1.00000000 | 0.69230769 |
+| Class 0 | 0.99579832 | 0.96734694 | 0.98136646 |
+| Class 1 | 0.93600000 | 1.00000000 | 0.96694215 |
+| Class 2 | 1.00000000 | 0.64615385 | 0.78504673 |
+| Class 3 | 0.66666667 | 1.00000000 | 0.80000000 |
 
-The array of size `[196, 150, 89, 36]` represents the support for each class, that is, the number of instances in each class in the validation set.
+The array of size `[245, 117, 65, 44]` represents the support for each class, that is, the number of instances in each class in the validation set.
 
 **Note**: The classes in the table above refer to different categories of TID defined in the 'Data Description' section. 
 
