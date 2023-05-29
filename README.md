@@ -96,10 +96,22 @@ Here are some quick results of using BNs for predicting TID:
 1. **Learned Network Structure**: the structure learning method used in this study is Chow-Liu ('cl'), the score type used in this study includes ['k2', 'bds', 'bic', 'bdeu'] for model comparison, and obtained the structure with the highest score.
 The learned structure is shown as below:
  <p>
-      <img width="70%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/6ab8a186b9e5bd3164fdee83e079ed24e95db198/Figure/Timeline%20of%20TID.png"></a>
+      <img width="99%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/d46e483c508cc7a84400f0b762b9b971859682bf/Figure/BN_structure.png"></a>
  </p>
 
 2. **Learned Parameter**: the estimator used for parameter learning is BayesianEstimator, the prior type used is 'bdeu'.
+3. **Model Validation**: The model performance of validation data set has been evaluated using Precision, Recall and F1-score for each class. Here is a summary of these metrics for our model:
+
+|   | Precision | Recall | F1-Score |
+|---|-----------|--------|----------|
+| Class 0 | 0.98404255 | 0.94387755 | 0.96354167 |
+| Class 1 | 0.92546584 | 0.99333333 | 0.95819936 |
+| Class 2 | 1.00000000 | 0.60674157 | 0.75524476 |
+| Class 3 | 0.52941176 | 1.00000000 | 0.69230769 |
+
+The array of size `[196, 150, 89, 36]` represents the support for each class, that is, the number of instances in each class in the validation set.
+
+**Note**: The classes in the table above refer to different categories of TID defined in the 'Data Description' section. 
 
 For a practical guide on how to implement these steps, refer to the associated Jupyter notebook and codebase in this repository.
 
