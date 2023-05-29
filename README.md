@@ -114,6 +114,15 @@ The array of size `[196, 150, 89, 36]` represents the support for each class, th
 
 **Note**: The classes in the table above refer to different categories of TID defined in the 'Data Description' section. 
 
+4. **Prediction**: the prediction performance of BNs will be evaluated using AUC-ROC curves for each 'Duration_class':
+<p float="left">
+  <img src="/Figure/AUC_ROC for TID Duration_class=0.png" width="100" />
+  <img src="/Figure/AUC_ROC for TID Duration_class=1.png" width="100" /> 
+  <img src="/Figure/AUC_ROC for TID Duration_class=2.png" width="100" />
+  <img src="/Figure/AUC_ROC for TID Duration_class=3.png" width="100" />
+</p>
+
+
 For a practical guide on how to implement these steps, refer to the associated Jupyter notebook and codebase in this repository.
 
 Happy coding and good luck with your predictions!
