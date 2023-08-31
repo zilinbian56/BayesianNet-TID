@@ -31,7 +31,7 @@ The BN model and the TID prediction approach were inspired by and built upon the
 
 1. Ozbay, K., & Noyan, N. (2006). [Estimation of incident clearance times using Bayesian Networks approach](https://www.sciencedirect.com/science/article/pii/S0001457505002009?casa_token=8Jj4Vss1w-MAAAAA:9BSQ7A1TuJYxhdad2cStk5U0eNZFPRjDMxTfzIdP1rNcB2ZmImMZG3lUhFz8_VX-CvqE7evg). *Accident Analysis & Prevention*, 38(3), 542-555. Elsevier. 
 2. Demiroluk, S., & Ozbay, K. (2014). [Adaptive learning in Bayesian Networks for incident duration prediction](https://journals.sagepub.com/doi/pdf/10.3141/2460-09?casa_token=LtCbpoJrIRkAAAAA:Kqhh-oLqBAd7wdgnwx6yoIkHl97K27fVLgkBequJh0JjXNcoVJFYW_YAjvHaUHXhlLx59cBumrJcqQ). *Transportation Research Record*, 2460(1), 77-85. SAGE Publications Sage CA: Los Angeles, CA.
-3. Ozbay, K., & Kachroo, P. (1999). [Incident management in intelligent transportation systems](https://digitalscholarship.unlv.edu/ece_fac_articles/103/).
+3. Ozbay, K., & Kachroo, P. (1999). [Incident management in intelligent transportation systems](https://digitalscholarship.unlv.edu/ece_fac_articles/103/). *Artech House Publishers*, Norwood, MA.
 
 
 ## Table of Contents
