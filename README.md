@@ -30,7 +30,8 @@ This README outlines how to use Bayesian Networks (BN) for predicting Traffic In
 The BN model and the TID prediction approach were inspired by and built upon the ideas presented in the following work:
 
 1. Ozbay, K., & Noyan, N. (2006). [Estimation of incident clearance times using Bayesian Networks approach](https://www.sciencedirect.com/science/article/pii/S0001457505002009?casa_token=8Jj4Vss1w-MAAAAA:9BSQ7A1TuJYxhdad2cStk5U0eNZFPRjDMxTfzIdP1rNcB2ZmImMZG3lUhFz8_VX-CvqE7evg). *Accident Analysis & Prevention*, 38(3), 542-555. Elsevier. 
-2. Demiroluk, S., & Ozbay, K. (2014). [Adaptive learning in Bayesian Networks for incident duration prediction](https://journals.sagepub.com/doi/pdf/10.3141/2460-09?casa_token=LtCbpoJrIRkAAAAA:Kqhh-oLqBAd7wdgnwx6yoIkHl97K27fVLgkBequJh0JjXNcoVJFYW_YAjvHaUHXhlLx59cBumrJcqQ). *Transportation Research Record*, 2460(1), 77-85. SAGE Publications Sage CA: Los Angeles, CA. 
+2. Demiroluk, S., & Ozbay, K. (2014). [Adaptive learning in Bayesian Networks for incident duration prediction](https://journals.sagepub.com/doi/pdf/10.3141/2460-09?casa_token=LtCbpoJrIRkAAAAA:Kqhh-oLqBAd7wdgnwx6yoIkHl97K27fVLgkBequJh0JjXNcoVJFYW_YAjvHaUHXhlLx59cBumrJcqQ). *Transportation Research Record*, 2460(1), 77-85. SAGE Publications Sage CA: Los Angeles, CA.
+3. Ozbay, K., & Kachroo, P. (1999). [Incident management in intelligent transportation systems](https://digitalscholarship.unlv.edu/ece_fac_articles/103/).
 
 
 ## Table of Contents
@@ -62,17 +63,17 @@ The independent variables that influence the duration include:
 
 1. `Direction`: Direction of the incident, 0: both directions, 1: east, 2: west, 3: south, 4: north, 5: no information.
 
-2. `County`: The county where the incident occurred, 0: Manhattan, 1: Kings, 2: Queens, 3: Bronx, 4: Richmond.
+2. `County`: The county where the incident occurred, 0: County1, 1: County2, 2: County3, 3: County4, 4: County5.
 
 3. `Year`: The year of the incident.
 
-4. `TOD`: Time of day (peak hour or off-peak) when the incident occurred, 0: off-peak, 1: peak hour.
+4. `TOD`: Time of day (daytime or night-time) when the incident occurred, 0: daytime, 1: night-time.
 
-5. `PeakHour`: The day of the week when the incident occurred.
+5. `PeakHour`: Whether it is peak hour when the incident occurred, 0: off-peak, 1: peak-hour.
 
 6. `DayofWeek`: The day when the incident occurred, 0: weekday, 1: weekend.
 
-7. `MonthofYear`: The season of month when the incident occurred, 0: psring and fall, 1: summer, 2: winter.
+7. `MonthofYear`: The season of month when the incident occurred, 0: spring and fall, 1: summer, 2: winter.
 
 8. `Injury involved`: Whether there is injury involved in the incident, 0: no history, 1: injuries involved.
 
