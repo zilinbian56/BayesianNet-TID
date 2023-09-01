@@ -40,7 +40,7 @@ The BN model and the TID prediction approach were inspired by and built upon the
 3. [Data Description](#data-description)
 4. [Process of using Bayesian Networks for TID Prediction](#process-of-using-bayesian-networks-for-tid-prediction)
 5. [Some quick results of using Bayesian Networks for TID Prediction](#some-quick-results-of-using-bayesian-networks-for-tid-prediction)
-6. [Setup Virtual Environment and Dependencies in Jupyter Notebook]
+6. [Setup Virtual Environment and Dependencies in Jupyter Notebook](#setup-virtual-environment-and-dependencies-in-jupyter-notebook)
 
 ## Introduction to Bayesian Networks
 Bayesian Networks (BN), also known as belief networks, are graphical models used to represent knowledge about an uncertain domain. It's an acyclic directed graph consisting of nodes representing variables, and edges representing dependencies between variables. Each node has a probability function that takes as input a particular set of values for the node's parent variables, and gives (as output) the probability of the variable represented by the node.
@@ -108,7 +108,7 @@ Here are some quick results of using BNs for predicting TID:
 The learned structure is shown as below:
 
  <p align="center">
-      <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/d46e483c508cc7a84400f0b762b9b971859682bf/Figure/BN_structure.png"></a>
+      <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/d46e483c508cc7a84400f0b762b9b971859682bf/Figure/BN_structure_directed.png"></a>
  </p>
 
 2. **Learned Parameter**: the estimator used for parameter learning is BayesianEstimator, the prior type used is 'bdeu'.
