@@ -59,7 +59,7 @@ In the notebook, you will see
 
 ## Data Description
 
-The dataset used in this project includes traffic incident records within New York City with various attributes. The main target variable is 'Duration (min)'. The target variable is converted into a categorical variable named 'Duration_class', class 0: 0-30min, class 1: 30-60min, class 2: 60-90min, class 3: larger than 90min. 
+The dataset used in this project includes traffic incident records with various attributes. The main target variable is 'Duration (min)'. The target variable is converted into a categorical variable named 'Duration_class', class 0: 0-30min, class 1: 30-60min, class 2: 60-90min, class 3: larger than 90min. 
 The independent variables that influence the duration include:
 
 1. `Direction`: Direction of the incident, 0: both directions, 1: east, 2: west, 3: south, 4: north, 5: no information.
