@@ -145,7 +145,7 @@ Step 4: Activate Virtual Environment
 conda activate bayesian-net
 ```
 
-Step 5: Install Dependencies, go to "venv" and copy paste requirements.txt to your root path. For window users, your prefix should look like C:\Users\{your device name}\. For mac users, prefix look like /Users/{your device name}/
+Step 5: Install Dependencies, copy paste requirements.txt to your root path. For window users, your prefix should look like C:\Users\{your device name}\. For mac users, prefix look like /Users/{your device name}/
 ```python
 conda install pip
 ```
