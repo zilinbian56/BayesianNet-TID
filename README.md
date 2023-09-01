@@ -40,6 +40,7 @@ The BN model and the TID prediction approach were inspired by and built upon the
 3. [Data Description](#data-description)
 4. [Process of using Bayesian Networks for TID Prediction](#process-of-using-bayesian-networks-for-tid-prediction)
 5. [Some quick results of using Bayesian Networks for TID Prediction](#some-quick-results-of-using-bayesian-networks-for-tid-prediction)
+6. [Setup Virtual Environment and Dependencies in Jupyter Notebook]
 
 ## Introduction to Bayesian Networks
 Bayesian Networks (BN), also known as belief networks, are graphical models used to represent knowledge about an uncertain domain. It's an acyclic directed graph consisting of nodes representing variables, and edges representing dependencies between variables. Each node has a probability function that takes as input a particular set of values for the node's parent variables, and gives (as output) the probability of the variable represented by the node.
@@ -124,18 +125,52 @@ The array of size `[245, 117, 65, 44]` represents the support for each class, th
 
 **Note**: The classes in the table above refer to different categories of TID defined in the 'Data Description' section. 
 
-4. **Prediction**: the prediction performance of BNs will be evaluated using AUC-ROC curves for each 'Duration_class':
-<p float="left">
-  <img src="/Figure/AUC_ROC_Class0.png" width="220" />
-  <img src="/Figure/AUC_ROC_Class1.png" width="220" /> 
-  <img src="/Figure/AUC_ROC_Class2.png" width="220" />
-  <img src="/Figure/AUC_ROC_Class3.png" width="220" />
-</p>
+4. **Prediction**: the prediction performance of BNs will be evaluated using TPR, FPR and AUC values for each 'Duration_class'.
 
 
-For a practical guide on how to implement these steps, refer to the associated Jupyter notebook and codebase in this repository.
+For a practical guide on how to implement these steps, refer to the following virtual environment setup and associated Jupyter notebook and codebase in this repository.
+
+## Setup Virtual Environment and Dependencies in Jupyter Notebook
+Step 1: Install [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html)
+
+Step 2: Open Terminal (Windows users: anaconda prompt, macos users: terminal)
+
+Step 3: Create Virtual Environment
+```python
+conda create --name bayesian-net
+```
+
+Step 4: Activate Virtual Environment
+```python
+conda activate bayesian-net
+```
+
+Step 5: Install Dependencies, go to "venv" and copy paste requirements.txt to your root path. For window users, your prefix should look like C:\Users\{your device name}\. For mac users, prefix look like /Users/{your device name}/
+```python
+conda install pip
+```
+
+```python
+pip install -r requirements.txt
+```
+
+```python
+conda deactivate
+```
+
+Step 6: Add Your Created Virtual Environment to Jupyter notebook
+```python
+pip install --user ipykernel
+```
+
+```python
+python -m ipykernel install --user --name=bayesian-net
+```
+
+Step 7: Open Jupyter Notebook and change kernel to bayesian-net
 
 Happy coding and good luck with your predictions!
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file
