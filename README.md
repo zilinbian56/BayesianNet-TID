@@ -131,6 +131,8 @@ The array of size `[245, 117, 65, 44]` represents the support for each class, th
 For a practical guide on how to implement these steps, refer to the following virtual environment setup and associated Jupyter notebook and codebase in this repository.
 
 ## Setup Virtual Environment and Dependencies in Jupyter Notebook
+You can setup virtual environment using either requirements.txt or yml file. We show either way as follows.
+### Option 1: Use requirements.txt and pip
 Step 1: Install [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html)
 
 Step 2: Open Terminal (Windows users: anaconda prompt, macos users: terminal)
@@ -168,6 +170,28 @@ python -m ipykernel install --user --name=bayesian-net
 ```
 
 Step 7: Open Jupyter Notebook and change kernel to bayesian-net
+
+### Option 2: use bayesian-net.yml file and conda
+Step 1: Install [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html)
+
+Step 2: Open Terminal (Windows users: anaconda prompt, macos users: terminal)
+
+Step 3: Create Virtual Environment: copy paste bayesian-net.yml to your root path. For window users, your prefix should look like C:\Users\{your device name}\. For mac users, prefix look like /Users/{your device name}/
+```python
+conda env create -f bayesian-net.yml
+```
+```python
+conda activate bayesian-net
+```
+Step 4: Add Your Created Virtual Environment to Jupyter notebook
+```python
+pip install --user ipykernel
+```
+```python
+python -m ipykernel install --user --name=bayesian-net
+```
+
+Step 5: Open Jupyter Notebook and change kernel to bayesian-net
 
 Happy coding and good luck with your predictions!
 
