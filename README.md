@@ -80,7 +80,7 @@ The independent variables that influence the duration include:
 
 9. `Truck involved`: Whether there is truck involved in the incident, 0: no history, 1: heavy vehicle involved.
 
-10. `Lane Closure Type`: How many travel lanes closed due to the incident, 0: zerao travel lane, 1: one travel lane, 2: more than two travel lanes, 3: all travel lanes.
+10. `Lane Closure Type`: How many travel lanes closed due to the incident, 0: zero travel lane, 1: one travel lane, 2: more than two travel lanes, 3: all travel lanes.
 
 12. `Fire involved`: Whether there is fire involved in the incident, 0: no history, 1: fire involved.
 
