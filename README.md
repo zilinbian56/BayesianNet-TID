@@ -2,7 +2,7 @@
 
 Traffic Incident Duration (TID) refers to the time elapsed between when a traffic incident occurs and when it is resolved. This encompasses the entirety of the incident management process, from the moment of the incident's occurrence to the final resolution, including detection, response, clearance and site recovery times.
 
-The process of TID is shown as follows:
+The process of TID is shown as follows [[1]](#1):
  
  <p align="center">
       <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/6ab8a186b9e5bd3164fdee83e079ed24e95db198/Figure/Timeline%20of%20TID.png"></a>
@@ -29,9 +29,25 @@ This README outlines how to use Bayesian Networks (BN) for predicting Traffic In
 
 The BN model and the TID prediction approach were inspired by and built upon the ideas presented in the following work:
 
-1. Ozbay, K., & Noyan, N. (2006). [Estimation of incident clearance times using Bayesian Networks approach](https://www.sciencedirect.com/science/article/pii/S0001457505002009?casa_token=8Jj4Vss1w-MAAAAA:9BSQ7A1TuJYxhdad2cStk5U0eNZFPRjDMxTfzIdP1rNcB2ZmImMZG3lUhFz8_VX-CvqE7evg). *Accident Analysis & Prevention*, 38(3), 542-555. Elsevier. 
-2. Demiroluk, S., & Ozbay, K. (2014). [Adaptive learning in Bayesian Networks for incident duration prediction](https://journals.sagepub.com/doi/pdf/10.3141/2460-09?casa_token=LtCbpoJrIRkAAAAA:Kqhh-oLqBAd7wdgnwx6yoIkHl97K27fVLgkBequJh0JjXNcoVJFYW_YAjvHaUHXhlLx59cBumrJcqQ). *Transportation Research Record*, 2460(1), 77-85. SAGE Publications Sage CA: Los Angeles, CA.
-3. Ozbay, K., & Kachroo, P. (1999). [Incident management in intelligent transportation systems](https://digitalscholarship.unlv.edu/ece_fac_articles/103/). *Artech House Publishers*, Norwood, MA.
+<a id="1">[1]</a> 
+Bian, Z., & Ozbay, K. (2019). 
+Final Report: Needs assessment for the development of data-driven predictive non-recurrent delay models for TRANSCOM.
+Request for Access.
+
+<a id="2">[2]</a>
+Ozbay, K., & Noyan, N. (2006).
+[Estimation of incident clearance times using Bayesian Networks approach](https://www.sciencedirect.com/science/article/pii/S0001457505002009?casa_token=8Jj4Vss1w-MAAAAA:9BSQ7A1TuJYxhdad2cStk5U0eNZFPRjDMxTfzIdP1rNcB2ZmImMZG3lUhFz8_VX-CvqE7evg).
+*Accident Analysis & Prevention*, 38(3), 542-555. Elsevier.
+
+<a id="3">[3]</a>
+Demiroluk, S., & Ozbay, K. (2014). 
+[Adaptive learning in Bayesian Networks for incident duration prediction](https://journals.sagepub.com/doi/pdf/10.3141/2460-09?casa_token=LtCbpoJrIRkAAAAA:Kqhh-oLqBAd7wdgnwx6yoIkHl97K27fVLgkBequJh0JjXNcoVJFYW_YAjvHaUHXhlLx59cBumrJcqQ). 
+*Transportation Research Record*, 2460(1), 77-85. SAGE Publications Sage CA: Los Angeles, CA.
+
+<a id="4">[4]</a>
+Ozbay, K., & Kachroo, P. (1999). 
+[Incident management in intelligent transportation systems](https://digitalscholarship.unlv.edu/ece_fac_articles/103/). 
+*Artech House Publishers*, Norwood, MA.
 
 
 ## Table of Contents
@@ -55,7 +71,6 @@ Bayesian Networks (BN) are suitable for this task for several reasons:
 
 3. **Cause-Effect Relationships**: BN's can capture causal relationships between variables, which is critical in understanding and predicting traffic incidents.
 
-In the notebook, you will see 
 
 ## Data Description
 
