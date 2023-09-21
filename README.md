@@ -123,8 +123,9 @@ Here are some quick results of using BNs for predicting TID:
 The learned structure is shown as below:
 
  <p align="center">
-      <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/d46e483c508cc7a84400f0b762b9b971859682bf/Figure/BN_structure_directed.png"></a>
+      <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/27f3e8aba5933d1a14694cb55696f0ba21525006/Figure/BN_structure_directed.png"></a>
  </p>
+ 
 
 2. **Learned Parameter**: the estimator used for parameter learning is BayesianEstimator, the prior type used is 'bdeu'.
 3. **Model Validation**: The model performance of validation data set has been evaluated using Precision, Recall and F1-score for each class. Here is a summary of these metrics for our model:
